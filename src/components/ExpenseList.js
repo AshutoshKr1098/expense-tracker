@@ -1,10 +1,22 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import "../assets/style.css";
 class ExpenseList extends Component {
-  state = {};
+  renderExpenses = () => {
+    return this.props.expense.map((exp, index) => {
+      return (
+        <div key={index}>
+          <p>{exp.detail}</p>
+          <span>{exp.amount}</span>
+        </div>
+      );
+    });
+  };
   render() {
-    return <div className="expenselist">ExpenseList</div>;
+    return <div className="expenselist">{this.renderExpenses()}</div>;
   }
 }
-
-export default ExpenseList;
+const mapStateToProps = (state) => {
+  return { expense: state.expense };
+};
+export default connect(mapStateToProps)(ExpenseList);

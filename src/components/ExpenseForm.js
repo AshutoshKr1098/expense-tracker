@@ -12,11 +12,10 @@ class ExpenseForm extends Component {
   };
   submitExpense = () => {
     if (
+      this.props.income !== null &&
       this.props.tempExpense.amount !== undefined &&
       this.props.tempExpense.detail !== undefined
     ) {
-      console.log("hi there");
-      console.log(this.props.tempExpense);
       this.props.addExpense(this.props.tempExpense);
     }
   };
