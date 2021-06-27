@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Input from "./Input";
 class Expense extends Component {
-  state = {};
+  
   render() {
     return (
       <div className="expense">
