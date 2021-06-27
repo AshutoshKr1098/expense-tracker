@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import Input from "./Input";
-import {}
-class IncomeForm extends Component {  
+import { getIncome } from "../actions";
+import { connect } from "react-redux";
+class IncomeForm extends Component {
   getInput = (input) => {
-    
+    this.props.getIncome(parseInt(input));
   };
   render() {
     return (
@@ -14,5 +15,8 @@ class IncomeForm extends Component {
     );
   }
 }
-
-export default IncomeForm;
+const mapStateToProps = (state) => {
+  console.log(state);
+  return { state: state };
+};
+export default connect(mapStateToProps, { getIncome })(IncomeForm);
