@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import "../assets/style.css";
 class Button extends Component {
-  state = {};
+  onButtonClick = (e) => {
+    e.preventDefault();
+    this.props.onButtonClick();
+  };
   render() {
-    return <button>{this.props.content}</button>;
+    return <button onClick={this.onButtonClick}>{this.props.content}</button>;
   }
 }
 
