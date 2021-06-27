@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Input from "./Input";
-class Income extends Component {
+class IncomeForm extends Component {
   state = {};
   render() {
     return (
-      <div className="income">
+      <div className="incomeform">
         <h4>Enter your monthly Income</h4>
         <Input />
       </div>
@@ -12,4 +12,4 @@ class Income extends Component {
   }
 }
 
-export default Income;
+export default IncomeForm;

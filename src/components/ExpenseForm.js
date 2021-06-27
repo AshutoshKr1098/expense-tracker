@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Income from "./Income";
+import IncomeForm from "./IncomeForm";
 import Expense from "./Expense";
 import Button from "./Button";
 
@@ -8,7 +8,7 @@ class ExpenseForm extends Component {
     return (
       <div className="expenseform">
         <form>
-          <Income />
+          <IncomeForm />
           <Expense />
           <Button content="Add Income" />
           <Button content="Add Expense" />
