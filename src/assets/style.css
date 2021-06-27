@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.app {
+  max-width: 960px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.app h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 10px 0px;
+}
+.expenseform {
+  background: rgb(112, 112, 171);
+  background: linear-gradient(
+    180deg,
+    rgba(112, 112, 171, 1) 21%,
+    rgba(72, 255, 177, 1) 100%
+  );
+  border-radius: 20px;
+  padding: 20px;
+  width: 45%;
+  margin-top: 40px;
+}
+.expenseform h4 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: rgb(0, 18, 66);
+}
+.input {
+  background-color: rgba(219, 97, 97, 0);
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 10px 0;
+  color: rgb(102, 26, 102);
+  text-align: center;
+}
+.input:hover {
+  border-bottom: 1px solid rgb(111, 8, 151);
+}
+button {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 2px solid maroon;
+  background-color: rgb(138, 9, 9);
+  cursor: pointer;
+}

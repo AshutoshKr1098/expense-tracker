@@ -7,7 +7,6 @@ class Income extends Component {
       <div className="income">
         <h4>Enter your monthly Income</h4>
         <Input />
-        <button>Add</button>
       </div>
     );
   }
